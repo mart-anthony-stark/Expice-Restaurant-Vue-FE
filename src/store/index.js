@@ -2,10 +2,14 @@ import { createStore } from "vuex";
 
 export default createStore({
   state: {
-    navOnTop: false,
+    navOnTop: true,
   },
   getters: {},
-  mutations: {},
+  mutations: {
+    setNavOnTop(state, payload) {
+      state.navOnTop = payload;
+    },
+  },
   actions: {},
   modules: {},
 });
