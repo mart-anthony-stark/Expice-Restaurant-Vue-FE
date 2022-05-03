@@ -22,11 +22,27 @@
       <img class="bg-vector dots" src="../assets/hero/bg-vector.svg" alt="" />
     </aside>
   </div>
+  <about-banner />
 </template>
 
 <script setup>
 // @ is an alias to /src
 import SearchBar from "@/components/SearchBar.vue";
+import AboutBanner from "@/components/AboutBanner.vue";
+import store from "@/store";
+import { onMounted, onUnmounted } from "@vue/runtime-core";
+
+const scroll = () => {
+  const setTop = window.pageYOffset == 0;
+  store.commit("setNavOnTop", setTop);
+};
+onMounted(() => {
+  window.addEventListener("scroll", scroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", scroll);
+});
 </script>
 
 <style lang="scss" scoped>
