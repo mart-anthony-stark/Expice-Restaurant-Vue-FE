@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar">
+  <div class="navbar" :class="{ onTop }">
     <h1>expice</h1>
 
     <div class="menu">
@@ -17,6 +17,10 @@
 </template>
 
 <script setup>
+const { default: store } = require("@/store");
+const { computed } = require("@vue/runtime-core");
+
+const onTop = computed(() => store.state.navOnTop);
 </script>
 
 
@@ -30,8 +34,15 @@
   left: 0;
   width: 100%;
   height: 100px;
-  color: $primary;
+  color: #fff;
+  background: $primary;
   z-index: 999;
+  transition: 0.5s ease;
+
+  &.onTop {
+    background: none;
+    color: $primary;
+  }
 
   h1 {
     font-size: 2rem;
