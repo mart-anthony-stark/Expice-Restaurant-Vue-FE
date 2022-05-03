@@ -7,3 +7,7 @@ $secondary: #2e266f;
   justify-content: center;
   align-items: center;
 }
+@mixin gapped($gap) {
+  display: flex;
+  gap: $gap;
+}
