@@ -23,12 +23,14 @@
     </aside>
   </div>
   <about-banner />
+  <advance-booking />
 </template>
 
 <script setup>
 // @ is an alias to /src
 import SearchBar from "@/components/SearchBar.vue";
 import AboutBanner from "@/components/AboutBanner.vue";
+import AdvanceBooking from "@/components/AdvanceBooking.vue";
 import store from "@/store";
 import { onMounted, onUnmounted } from "@vue/runtime-core";
 
@@ -51,7 +53,7 @@ onUnmounted(() => {
   position: relative;
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  background: #fff5ec;
+  background: $complementary;
 
   .right-overlay {
     position: absolute;
