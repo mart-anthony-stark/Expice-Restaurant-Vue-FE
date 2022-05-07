@@ -68,36 +68,7 @@
   padding-bottom: 50px;
   overflow: hidden;
 
-  .desc {
-    margin-left: 6rem;
-    display: flex;
-    gap: 150px;
-    align-items: center;
-
-    h1 {
-      color: $secondary;
-      font-size: 2rem;
-      position: relative;
-      font-weight: 400;
-
-      &::before {
-        content: "";
-        position: absolute;
-        background: $primary;
-        height: 100%;
-        width: 1rem;
-        margin-left: -1.5rem;
-      }
-
-      span {
-        display: block;
-      }
-    }
-
-    p {
-      max-width: 500px;
-    }
-  }
+  @include desc();
 
   .products {
     display: flex;
