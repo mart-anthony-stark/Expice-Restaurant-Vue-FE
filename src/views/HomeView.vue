@@ -25,6 +25,7 @@
   <about-banner />
   <advance-booking />
   <our-services />
+  <food-menu />
 </template>
 
 <script setup>
@@ -33,6 +34,7 @@ import SearchBar from "@/components/SearchBar.vue";
 import AboutBanner from "@/components/AboutBanner.vue";
 import AdvanceBooking from "@/components/AdvanceBooking.vue";
 import OurServices from "@/components/OurServices.vue";
+import FoodMenu from "@/components/FoodMenu.vue";
 
 import store from "@/store";
 import { onMounted, onUnmounted } from "@vue/runtime-core";
