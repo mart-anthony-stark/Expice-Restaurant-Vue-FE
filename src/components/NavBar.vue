@@ -33,7 +33,7 @@ const onTop = computed(() => store.state.navOnTop);
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px;
+  height: 80px;
   color: #fff;
   background: $primary;
   z-index: 999;
