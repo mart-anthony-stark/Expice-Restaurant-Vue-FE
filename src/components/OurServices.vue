@@ -16,14 +16,24 @@
 
     <div class="services-container">
       <div class="left">
-        <div class="booking">
+        <div class="service booking">
           <img src="../assets/services/booking.svg" alt="" />
+          <img
+            class="service-desc"
+            src="../assets/services/booking-desc.svg"
+            alt=""
+          />
         </div>
-        <div class="food">
+        <div class="service food">
+          <img
+            class="service-desc"
+            src="../assets/services/food-desc.svg"
+            alt=""
+          />
           <img src="../assets/services/food-for-free.svg" alt="" />
         </div>
       </div>
-      <img src="../assets/services/delivery.svg" alt="" />
+      <img class="delivery" src="../assets/services/delivery.svg" alt="" />
     </div>
   </section>
 </template>
@@ -44,7 +54,31 @@ section {
   .services-container {
     margin-top: 100px;
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+
+    .left {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      .service {
+        img {
+          width: 280px;
+          height: 100%;
+        }
+
+        &.food .service-desc {
+          transform: translateX(50px);
+        }
+        &.booking .service-desc {
+          margin-left: -50px;
+        }
+      }
+    }
+
+    .delivery {
+      width: 90%;
+      height: 90%;
+    }
   }
 }
 </style>
