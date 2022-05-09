@@ -91,7 +91,6 @@ export default {
 
 <style lang="scss" scoped>
 section {
-  background: $complementary;
   padding: 2rem;
 
   .heading {
