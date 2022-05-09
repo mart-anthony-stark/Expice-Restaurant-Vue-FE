@@ -27,6 +27,7 @@
   <our-services />
   <food-menu />
   <download-app />
+  <footer-section />
 </template>
 
 <script setup>
@@ -37,6 +38,7 @@ import AdvanceBooking from "@/components/AdvanceBooking.vue";
 import OurServices from "@/components/OurServices.vue";
 import FoodMenu from "@/components/FoodMenu.vue";
 import DownloadApp from "@/components/DownloadApp.vue";
+import FooterSection from "@/components/FooterSection.vue";
 
 import store from "@/store";
 import { onMounted, onUnmounted } from "@vue/runtime-core";
