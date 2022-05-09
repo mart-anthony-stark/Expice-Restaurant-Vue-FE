@@ -25,6 +25,7 @@
     <div class="right">
       <img src="../assets/download-app/Phone.png" alt="" />
     </div>
+    
   </section>
 </template>
 
@@ -66,6 +67,7 @@ section {
 
     p {
       max-width: 400px;
+      color: #707070;
     }
 
     .buttons {
