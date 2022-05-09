@@ -25,7 +25,6 @@
     <div class="right">
       <img src="../assets/download-app/Phone.png" alt="" />
     </div>
-    
   </section>
 </template>
 
@@ -39,9 +38,12 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 section {
+  padding: 1rem;
+  padding-top: 3rem;
   background: $complementary;
   @include center();
   gap: 5rem;
+  flex-wrap: wrap;
 
   .left {
     @include gapped(1.5rem);
@@ -78,9 +80,15 @@ section {
       }
     }
   }
-
   .right img {
     height: 100vh;
+  }
+
+  @media (max-width: 1080px) {
+    .right img {
+      width: 60% !important;
+      height: auto !important;
+    }
   }
 }
 </style>
