@@ -49,6 +49,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 section {
   padding: 50px;
+  overflow: hidden;
   @include desc();
 
   .services-container {
