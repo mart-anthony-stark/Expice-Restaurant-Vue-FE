@@ -81,4 +81,10 @@ section {
     }
   }
 }
+
+@media (max-width: 1255px) {
+  .services-container {
+    grid-template-columns: 1fr !important;
+  }
+}
 </style>
