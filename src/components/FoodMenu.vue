@@ -113,7 +113,7 @@ section {
     padding: 1.5rem;
     margin-top: 2rem;
     place-items: center;
-    gap: 10px;
+    gap: 1rem;
 
     .card {
       height: 430px;
@@ -155,6 +155,12 @@ section {
         color: #707070;
         padding: 0 1rem 0 1rem;
       }
+    }
+  }
+
+  @media (max-width: 1060px) {
+    .foods-container {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }
