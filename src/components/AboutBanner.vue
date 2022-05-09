@@ -82,8 +82,8 @@
       position: relative;
 
       img.meal {
-        height: 450px;
-        width: 450px;
+        height: 100%;
+        width: 100%;
       }
 
       .details {
@@ -126,6 +126,28 @@
       img {
         margin-left: -1.5rem;
       }
+    }
+  }
+
+  @media (max-width: 990px) {
+    .desc {
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .products {
+      margin-top: 5rem;
+
+      .product {
+        height: 400px;
+        width: 400px;
+      }
+    }
+  }
+
+  @media (max-width: 850px) {
+    .products {
+      justify-content: center;
     }
   }
 }
