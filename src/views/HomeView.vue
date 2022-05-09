@@ -1,7 +1,6 @@
 <template>
   <div class="home">
     <div class="right-overlay"></div>
-    <!-- <img src="" alt=""> -->
     <div class="left">
       <div>
         <h1 class="large">Food</h1>
@@ -116,6 +115,18 @@ onUnmounted(() => {
         left: -15px;
         z-index: -2;
       }
+    }
+  }
+
+  @media (max-width: 1080px) {
+    .large {
+      font-size: 6rem !important;
+    }
+    .tagline {
+      margin-top: -40px !important;
+    }
+    .plate {
+      width: 420px;
     }
   }
 }
