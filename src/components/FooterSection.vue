@@ -1,25 +1,47 @@
 <template>
   <footer>
     <img class="bg" src="../assets/footer/plant.svg" alt="" />
-    <div class="container">
-      <div class="heading">
-        <h1>Get Notified</h1>
-        <h1>About New Amazing Products</h1>
+    <div class="top-container">
+      <div class="container">
+        <div class="heading">
+          <h1>Get Notified</h1>
+          <h1>About New Amazing Products</h1>
+        </div>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi,
+          magnam.
+        </p>
+        <div class="email-input-container">
+          <input type="text" placeholder="E-mail" />
+          <img src="../assets/footer/subscribe-btn.svg" alt="" />
+        </div>
+
+        <div class="links">
+          <router-link to="/">Product</router-link>
+          <router-link to="/">Company</router-link>
+          <router-link to="/">Learn More</router-link>
+          <router-link to="/">Get In Touch</router-link>
+        </div>
       </div>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, magnam.
-      </p>
-      <div class="email-input-container">
-        <input type="text" placeholder="E-mail" />
-        <img src="../assets/footer/subscribe-btn.svg" alt="" />
+    </div>
+
+    <div class="socials">
+      <div class="links">
+        <router-link to="/"
+          ><img src="../assets/footer/fb.svg" alt=""
+        /></router-link>
+        <router-link to="/"
+          ><img src="../assets/footer/twitter.svg" alt=""
+        /></router-link>
+        <router-link to="/"
+          ><img src="../assets/footer/linkedin.svg" alt=""
+        /></router-link>
+        <router-link to="/"
+          ><img src="../assets/footer/behance.svg" alt=""
+        /></router-link>
       </div>
 
-      <div class="links">
-        <router-link to="/">Product</router-link>
-        <router-link to="/">Company</router-link>
-        <router-link to="/">Learn More</router-link>
-        <router-link to="/">Get In Touch</router-link>
-      </div>
+      <span>©2020 Expice Studio</span>
     </div>
   </footer>
 </template>
@@ -29,7 +51,9 @@ footer {
   background: #fff5ec;
   min-height: 60vh;
   position: relative;
-  @include center();
+  .top-container {
+    @include center();
+  }
 
   .bg {
     position: absolute;
@@ -86,6 +110,17 @@ footer {
         color: #707070;
         text-decoration: none;
       }
+    }
+  }
+
+  .socials {
+    @include gapped(4rem);
+    position: absolute;
+    bottom: 10px;
+    right: 4rem;
+
+    .links {
+      @include gapped(1rem);
     }
   }
 }
