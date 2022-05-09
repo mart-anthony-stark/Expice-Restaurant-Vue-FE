@@ -53,7 +53,7 @@ section {
   @include center();
 
   .lettuce {
-    height: 120%;
+    height: 100%;
     top: -50px;
     position: absolute;
     left: 0;
@@ -61,6 +61,7 @@ section {
   .cabbage {
     position: absolute;
     right: 0;
+    width: 20%;
   }
 
   form {
@@ -136,6 +137,12 @@ section {
           width: 100%;
         }
       }
+    }
+  }
+
+  @media (max-width: 900px) {
+    form {
+      z-index: 1;
     }
   }
 }
